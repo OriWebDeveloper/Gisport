@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" id="scrollable">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inici</title>
+    <link rel="stylesheet" href="Estils/estils.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;600&family=Varela+Round&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="bg-dark">
+    <header>
+        <nav class="menu">
+            <a class="link-menu" href="#section-1">
+                <div class="menu-item" id="menu-item1"><i class="bi bi-circle"></i>
+                    <p id="text-item">Inici</p>
+                </div>
+            </a>
+            <a class="link-menu" href="#section-2">
+                <div class="menu-item" id="menu-item2"><i class="bi bi-circle"></i>
+                    <p id="text-item">Esports</p>
+                </div>
+            </a>
+            <a class="link-menu" href="#section-3">
+                <div class="menu-item" id="menu-item3"><i class="bi bi-circle"></i>
+                    <p id="text-item">Preguntes</p>
+                </div>
+            </a>
+            <a class="link-menu" href="#section-4">
+                <div class="menu-item" id="menu-item4"><i class="bi bi-circle"></i>
+                    <p id="text-menu-4">Contacte</p>
+                </div>
+            </a>
+        </nav>
+    </header>
+    <div id="section-1">
+        <img class="bubble" onclick="LiveChatWidget.call('maximize')" src="Imatges/Support-img.png" />
+        <noscript><a href="https://www.livechat.com/chat-with/15336585/" rel="nofollow">Chat with us</a>, powered by <a href="https://www.livechat.com/?welcome" rel="noopener nofollow" target="_blank">LiveChat</a></noscript>
+        <h1 class="title-video">GISPORT</h1>
+        <video autoplay muted loop id="bgvid">
+            <source src="Imatges/Video-PromoSport.mp4" type="video/mp4">
+
+        </video>
+
+    </div>
+
+    <div id="section-2">
+        <div id="container-cards">
+            <div class="cards-sports" id="sport-1">
+                <h1 class="title-sports-card">Futbol</h1>
+            </div>
+            <div class="cards-sports" id="sport-2">
+                <h1 class="title-sports-card">Tennis</h1>
+            </div>
+            <div class="cards-sports" id="sport-3">
+                <h1 class="title-sports-card">Rugby</h1>
+            </div>
+            <div class="cards-sports" id="sport-4">
+                <h1 class="title-sports-card">Golf</h1>
+            </div>
+            <div class="cards-sports" id="sport-5">
+                <h1 class="title-sports-card">Natació</h1>
+            </div>
+        </div>
+    </div>
+    <div id="section-3">Preguntes</div>
+    <div id="section-4">
+        <form id="form-contact">
+            <h1 class="title-form">Contacta'm</h1>
+            <input name="name" autocomplete="off" type="text" class="feedback-input-name" id="input" placeholder="Nom*"
+                required />
+            <input name="name" autocomplete="off" type="text" class="feedback-input-lastname" id="input"
+                placeholder="Cognoms*" required />
+            <br>
+            <input name="telf" autocomplete="off" type="tel" class="feedback-input-tel" id="input"
+                placeholder="Telefon*" required />
+            <input name="email" autocomplete="off" type="email" class="feedback-input-email" id="input"
+                placeholder="Correu-e*" required>
+            <br>
+            <textarea name="text" autocomplete="off" class="feedback-input-text" id="input"
+                placeholder="Comenta!"></textarea>
+            <br>
+            <button type="submit" autocomplete="off" value="Submit" class="formbutton">Enviar</button>
+        </form>
+    </div>
+    <script src="Programacio/program.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
