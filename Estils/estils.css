@@ -1,0 +1,648 @@
+* {
+    font-family: 'Dosis', sans-serif;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.title-video {
+    color: white;
+    margin-right: 20%;
+}
+
+#bgvid {
+    z-index: -1;
+}
+
+#container-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+
+.cards-sports {
+
+    width: 16%;
+    height: 950px;
+    text-align: center;
+}
+
+
+
+
+.title-sports-card {
+    font-weight: bold;
+    margin-top: 5%;
+    color: white;
+}
+
+
+
+
+#sport-1 {
+    background-color: rgb(96, 93, 232);
+    background-image: url(../Imatges/BG-futbol.jpg);
+}
+
+#sport-1:hover {
+    background-image: linear-gradient(to bottom, rgba(0, 25, 38, 1), rgba(117, 19, 93, 0)), url(../Imatges/BG-futbol.jpg);
+}
+
+#sport-2 {
+    background-color: rgb(96, 93, 232);
+    background-image: url(../Imatges/BG-tenis.jpg);
+}
+
+#sport-2:hover {
+    background-image: linear-gradient(to bottom, rgba(0, 25, 38, 1), rgba(117, 19, 93, 0)), url(../Imatges/BG-tenis.jpg);
+}
+
+#sport-3 {
+    background-color: rgb(96, 93, 232);
+    background-image: url(../Imatges/BG-rugby.jpg);
+}
+
+#sport-3:hover {
+    background-image: linear-gradient(to bottom, rgba(0, 25, 38, 1), rgba(117, 19, 93, 0)), url(../Imatges/BG-rugby.jpg);
+}
+
+#sport-4 {
+    background-color: rgb(96, 93, 232);
+    background-image: url(../Imatges/BG-golf.jpg);
+}
+
+#sport-4:hover {
+    background-image: linear-gradient(to bottom, rgba(0, 25, 38, 1), rgba(117, 19, 93, 0)), url(../Imatges/BG-golf.jpg);
+}
+
+
+#sport-5 {
+    background-color: rgb(96, 93, 232);
+    background-image: url(../Imatges/Bg-natacio.jpg);
+}
+
+#sport-5:hover {
+    background-image: linear-gradient(to bottom, rgba(0, 25, 38, 1), rgba(117, 19, 93, 0)), url(../Imatges/Bg-natacio.jpg);
+}
+
+
+
+.cards-sports:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: 0.7s;
+}
+
+#sport-2 {
+    background-color: rgb(93, 232, 100);
+}
+
+#sport-3 {
+    background-color: rgb(232, 165, 93);
+}
+
+#sport-4 {
+    background-color: rgb(232, 93, 200);
+}
+
+#sport-5 {
+    background-color: rgb(232, 93, 93);
+}
+
+
+.menu {
+    color: white;
+    width: 120px;
+    margin-top: 15%;
+    font-size: 120%;
+    margin-left: 1%;
+    position: fixed;
+    z-index: 1;
+}
+
+.link-menu {
+    color: white;
+    text-decoration: none;
+}
+
+.menu-item:hover {
+    color: white;
+    text-decoration: none;
+    transform: scale(1.1);
+}
+
+
+video {
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1920px;
+    height: 950px;
+    filter: opacity(0.1);
+    z-index: 1;
+}
+
+.title-video {
+    color: white;
+    text-align: center;
+    margin-top: 3%;
+    font-size: 500%;
+}
+
+
+#section-1 {
+    width: 1920px;
+    height: 890px;
+}
+
+#section-2 {
+    width: 1920px;
+    height: 950px;
+    background-color: rgb(71, 0, 0);
+}
+
+#section-3 {
+    width: 1920px;
+    height: 950px;
+    background-color: rgb(15, 0, 71);
+}
+
+#section-4 {
+    width: 1920px;
+    height: 950px;
+    background: radial-gradient(circle, rgba(58, 180, 171, 1), rgba(69, 84, 252, 1));
+}
+
+
+.menu-item {
+    display: flex;
+}
+
+.active {
+    font-weight: bold;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.menu-item p {
+    margin-left: 7%;
+}
+
+
+
+.title-form {
+    padding-top: 2%;
+    font-size: 500%;
+    color: white;
+    margin-left: 27%;
+    margin-bottom: 3%;
+}
+
+#form-contact {
+    background-color: rgba(255, 255, 255, .15);
+    backdrop-filter: blur(15px);
+    width: 50%;
+    height: 50%;
+    margin-left: 15%;
+    box-shadow: 1px 7px 22px 2px rgba(0, 0, 0, 0.75);
+
+}
+
+
+#input {
+    background: none;
+    outline: 0;
+    color: white;
+    border-width: 0 0 2px;
+    border-color: rgb(255, 255, 255);
+    padding: 1%;
+}
+
+#input::placeholder {
+    color: white;
+    opacity: 50%;
+}
+
+#input:focus {
+    border-width: 0 0 2px;
+    /* background-color: rgba(199, 199, 199, 0.5); */
+    transition: .5s;
+}
+
+#input:focus::placeholder {
+    color: rgb(126, 124, 124);
+    transition: .4s;
+    opacity: 100%;
+}
+
+
+.feedback-input-name:valid {
+    background: hsla(100, 90%, 70%, 1);
+}
+
+.feedback-input-name:invalid {
+    background: hsla(100, 90%, 70%, 1);
+}
+
+.feedback-input-name,
+.feedback-input-tel {
+    margin-left: 20%;
+}
+
+.feedback-input-lastname,
+.feedback-input-email {
+    margin-left: 12%;
+}
+
+
+.feedback-input-tel,
+.feedback-input-email {
+    margin-top: 3%;
+}
+
+.feedback-input-text {
+    margin-top: 5%;
+    margin-left: 20%;
+    width: 54.8%;
+    resize: none;
+}
+
+.formbutton {
+    padding: 1%;
+    margin-top: 3%;
+    margin-left: 43%;
+    width: 10%;
+
+    background-color: rgba(255, 255, 255, .15);
+    backdrop-filter: blur(5px);
+    border: none;
+    color: white;
+}
+
+.formbutton:hover {
+    transform: scale(1.2);
+    transition: 0.3s;
+}
+
+
+.card {
+    width: 18em;
+    margin: 2% 0 2% 2%;
+}
+
+.card-title {
+    font-weight: bolder;
+    text-align: center;
+}
+
+.card-text {
+    width: 90%;
+    margin-left: 2%;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.btn-buy{
+    background-color: aquamarine;
+    border: none;
+    padding: 2% 0% 2% 0%;
+
+}
+
+.btn-buy:hover{
+    background-color: rgb(78, 252, 78);
+
+}
+
+.container-cards{
+    display: flex;
+    flex-direction: row;
+    gap: 4.2%;
+}
+
+.bi-arrow-left{
+    font-size: 250%;
+    margin-left: 1%;
+}
+
+.bi-arrow-left:hover{
+    cursor: pointer;
+}
+
+/*chat*/
+.bubble {
+    width: 70px;
+    height: 70px;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    cursor: pointer;
+    transition: transform .2s;
+    z-index: 9999;
+    }
+    
+    .bubble:hover {
+    transform: scale(1.2);
+    }
+/*Mediaqueries*/
+
+@media (max-width:360px) {}
+
+@media(max-width:400px) {}
+
+@media (max-width:400px) {}
+
+@media (max-width:400px) {}
+
+@media (max-width:400px) {}
+
+@media (max-width:400px) {}
+
+@media (min-width:440px) {}
+
+@media (max-width:450px) {}
+
+@media (max-width:450px) {}
+
+@media (max-width:450px) {}
+
+@media (max-width:450px) {}
+
+@media (max-width:450px) {}
+
+@media (max-height:460px) {}
+
+@media (max-width:480px) {}
+
+@media (max-width:480px) {}
+
+@media (max-width:480px) {}
+
+@media (max-width:480px) {}
+
+@media (max-width:480px) {}
+
+@media (max-width:480px) {}
+
+@media (max-width:480px) {}
+
+@media (max-width:510px) {}
+
+@media (max-height:530px) {}
+
+@media (max-width:539px) {}
+
+@media (max-width:539px) {}
+
+@media (max-width:539px) {}
+
+@media (max-width:719px) {}
+
+@media (max-width:719px) {}
+
+@media (max-width:959px) {}
+
+@media (max-width:959px) {}
+
+@media (max-width:959px) {}
+
+@media (max-width:679px) {}
+
+@media (max-width:719px) {}
+
+@media (max-width:1649px) {}
+
+@media (max-width:959px) {}
+
+@media (max-width:959px) {}
+
+@media (max-width:979px) {}
+
+@media (max-width:959px) {}
+
+@media (max-width:959px) {}
+
+@media (min-width:780px) {}
+
+@media (max-width:650px) {}
+
+@media (max-width:650px) {}
+
+@media (max-width:1150px) {}
+
+@media (max-width:1150px) {}
+
+@media (max-width:650px) {}
+
+@media (max-width:830px) {}
+
+@media (max-width:959px) {}
+
+@media (max-width:959px) {}
+
+@media (max-width:959px) {}
+
+@media (max-width:959px) {}
+
+@media (max-width:959px) {}
+
+@media (min-width:960px) {}
+
+@media (max-width:959px) {}
+
+@media (max-width:719px) {}
+
+@media (max-width:719px) {}
+
+@media (max-width:959px) {}
+
+@media (min-width:960px) {}
+
+@media (min-width:960px) {}
+
+@media (max-width:719px) {}
+
+@media (max-width:719px) {}
+
+@media (max-width:510px) {}
+
+@media (max-width:719px) {}
+
+@media (max-width:959px) {}
+
+@media (max-width:959px) {}
+
+@media (max-width:959px) {}
+
+@media (max-width:959px) {}
+
+@media (max-width:719px) {}
+
+@media (max-width:719px) {}
+
+@media (max-width:1600px) {}
+
+@media (max-width:1020px) and (min-width:959px),
+(max-width:1520px) and (min-width:1339px),
+(max-width:760px) {}
+
+@media (max-width:1020px) and (min-width:959px),
+(max-width:1520px) and (min-width:1339px),
+(max-width:760px) {}
+
+@media (max-width:1020px) and (min-width:959px),
+(max-width:1520px) and (min-width:1339px),
+(max-width:760px) {}
+
+@media (max-width:719px) {}
+
+@media (max-width:719px) {}
+
+@media (max-width:1179px) {}
+
+@media (max-width:719px) {}
+
+@media (max-width:1179px) {}
+
+@media (max-width:719px) {}
+
+@media (max-width:1600px) {}
+
+@media (max-width:1280px) {}
+
+@media (max-width:1200px) {}
+
+@media (max-width:1260px) {}
+
+@media (max-width:1200px) {}
+
+@media (max-width:1200px) {}
+
+@media (max-width:1190px) {}
+
+@media (max-width:959px) {}
+
+@media(max-width:1100px) {}
+
+@media (max-width:900px) {}
+
+@media (max-width:700px) {}
+
+@media (max-height:600px) {}
+
+@media (max-height:840px) {}
+
+@media (max-width:700px) {}
+
+@media (max-height:720px) {}
+
+@media (max-width:700px) {}
+
+@media (max-width:550px) {}
+
+@media (max-width:1300px) {}
+
+@media (max-width:1000px) {}
+
+@media (max-width:700px) {}
+
+@media (max-width:780px) {}
+
+@media (max-width:1000px) {}
+
+@media (max-height:900px) {}
+
+@media (max-width:1000px) {}
+
+@media (max-width:1000px) {}
+
+@media (max-width:1300px) {}
+
+@media (max-width:1000px) {}
+
+@media (max-height:800px) {}
+
+@media (max-width:1140px) {}
+
+@media (max-height:720px) {}
+
+@media (max-height:655px) {}
+
+@media (max-width:1000px) {}
+
+@media (max-height:800px) {}
+
+@media (max-width:1140px) {}
+
+@media (max-height:720px) {}
+
+@media (max-height:655px) {}
+
+@media (max-width:1000px) {}
+
+@media (max-width:600px) {}
+
+@media (max-width:1000px) {}
+
+@media (max-width:719px) {}
+
+@media (max-width:600px) {}
+
+@media (max-width:600px) {}
+
+@media (max-width:600px) {}
+
+@media (max-width:600px) {}
+
+@media (max-width:1000px) {}
+
+@media (max-width:1200px) {}
+
+@media (max-width:1000px) {}
+
+@media (max-width:600px) {}
+
+@media (max-width:1000px) {}
+
+@media (max-width:600px) {}
+
+@media (max-width:1000px) {}
+
+@media (max-width:1001px) {}
+
+@media (max-width:600px) {}
+
+@media (max-width:1000px) {}
+
+@media (max-width:600px) {}
+
+@media (max-width:1000px) {}
+
+@media (max-width:600px) {}
+
+@media (max-width:1001px) {}
+
+@media (max-width:600px) {}
+
+@media (max-width:1001px) {}
+
+@media (max-width:600px) {}
+
+@media (max-width:1001px) {}
+
+@media(max-width:600px) {}
+
+@media (max-width:720px) {}
+
+@media (max-width:600px) {}
+
+@media (max-width:1001px) {}
+
+@media (max-width:1001px) {}
+
+@media (max-width:1001px) {}
+
+@media (max-width:600px) {}
+
+/* --------------------------------------------------------------------------- */
